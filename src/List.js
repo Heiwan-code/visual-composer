@@ -64,7 +64,7 @@ export default class List extends Component {
       this.setState({listItemsAll: newState})
       post.gsapTimeline.to(`#post-${post.id} .list-item__indicator`, {
         width: '100%',
-        opacity: 0.8,
+        opacity: 0.3,
         duration: 0.55,
         ease: 'Linear.easeNone'
       }).then(() => {
@@ -77,7 +77,7 @@ export default class List extends Component {
         })
         post.gsapTimeline.to(`#post-${post.id}`, 
         {
-          height: '1px',
+          height: '2px',
           duration: 0.6,
           ease: 'Linear.easeNone'
         })

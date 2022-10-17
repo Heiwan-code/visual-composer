@@ -50,6 +50,7 @@
             }
             &:not(.show) {
                 .list-item__indicator {
+                    border-top: 2px solid black;
                     height: 100%;
                 }
             }

@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Array-Regular';
+    src: url('../fonts/array/Array-Regular.woff2') format('woff2'),
+         url('../fonts/array/Array-Regular.woff') format('woff'),
+         url('../fonts/array/Array-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Array-Wide';
+    src: url('../fonts/array/Array-Wide.woff2') format('woff2'),
+         url('../fonts/array/Array-Wide.woff') format('woff'),
+         url('../fonts/array/Array-Wide.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Array-Semibold';
+    src: url('../fonts/array/Array-Semibold.woff2') format('woff2'),
+         url('../fonts/array/Array-Semibold.woff') format('woff'),
+         url('../fonts/array/Array-Semibold.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Array-SemiboldWide';
+    src: url('../fonts/array/Array-SemiboldWide.woff2') format('woff2'),
+         url('../fonts/array/Array-SemiboldWide.woff') format('woff'),
+         url('../fonts/array/Array-SemiboldWide.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Array-Bold';
+    src: url('../fonts/array/Array-Bold.woff2') format('woff2'),
+         url('../fonts/array/Array-Bold.woff') format('woff'),
+         url('../fonts/array/Array-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: $headerFont;
+    src: url('../fonts/array/Array-BoldWide.woff2') format('woff2'),
+         url('../fonts/array/Array-BoldWide.woff') format('woff'),
+         url('../fonts/array/Array-BoldWide.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+
+  @font-face {
+    font-family: $primaryFont;
+    src: url('../fonts/tiny/TINY5x3-80.woff2') format('woff2'),
+      url('../fonts/tiny/TINY5x3-80.woff') format('woff');
+      font-weight: 400;
+      font-display: swap;
+      font-style: normal;
+  }
+  
+  
+
+  h1,h2,h3,h4,h5,h6 {
+    // font-family: 'array';
+    font-family: $headerFont;
+    line-height: 80%;
+  }
+  p {
+    font-family: $primaryFont;
+    color: rgba(63,81,181,1);
+  }
+
+  .text {
+    &--large {
+        font-size: 92px;
+    }
+    &--medium {
+      font-size: 42px;
+    }
+    &--rainbow {
+        // background-clip: text;
+        // background: -webkit-linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+        background: -webkit-linear-gradient(180deg,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 5000% 100%;
+        animation: gradientLoop 3s linear 0s infinite alternate;
+    }
+  }

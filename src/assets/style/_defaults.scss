@@ -1,0 +1,43 @@
+* { 
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+}
+
+a {
+    text-decoration: none;
+}
+
+#root {
+    min-height: 100vh;
+}
+body, html {
+    background-color: black;
+}
+body {
+    &::-webkit-scrollbar {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        z-index: 6;
+        width: 5px;
+        height: 100vh;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: rgba(63,81,181,1);
+        border-radius: 1px;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(171,71,188 ,1);
+    }
+}

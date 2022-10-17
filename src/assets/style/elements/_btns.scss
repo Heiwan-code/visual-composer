@@ -1,0 +1,28 @@
+.btn {
+    width: fit-content;
+    &--primary {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 2px;
+        padding-bottom: 8px;
+        border-radius: 8px;
+        background: linear-gradient( to bottom right,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%);
+        background-size: 300% 300%;
+        background-position: 0% 0%;
+        box-shadow: 1px 1px 5px rgb(81 45 168);
+        color: rgba($color: white, $alpha: 0.7);
+        font-family: $primaryFont;
+        text-transform: uppercase;
+        font-size: 36px;
+        transition: color 0.36s ease-in, background-position 0.22s ease-in;
+        &:hover {
+            color: rgba($color: white, $alpha: 1);
+            background-position: 100% 100%;
+        }
+    }
+    &--stretch {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
